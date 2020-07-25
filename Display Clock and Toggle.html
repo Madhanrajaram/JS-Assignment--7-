@@ -1,0 +1,50 @@
+<!doctype html><html><head> 
+  <title> </title> 
+  <style>
+    body{
+      background-color:white;
+      color:black;
+    }  
+    .dark{
+      background-color:black;
+      color:white;
+      }
+  </style> 
+ <style type="text/css" id="dcoder_stylesheet">.black{
+  color:black;
+}</style></head> 
+ <body> 
+  <h1 id="hy"> Welcome </h1> 
+  <br> 
+  <br> 
+  <h2 id="gh"></h2> 
+  <br> 
+  <button onclick="ti()">Show time</button> 
+  <br> 
+  <br> 
+  <h4> </h4> 
+  <button onclick="togg()">Toggle</button> 
+  <script>
+    var a = prompt("Enter your name");
+    document.getElementById("hy");
+    hy.innerText+=" "+a;
+    function time()
+    {
+      let date = new Date();
+      let time = date.toLocaleTimeString();
+      document.getElementById("gh");
+      gh.innertext=time;
+    }
+    function ti()
+    {
+    setInterval(time,1000);
+    }
+    
+    function togg()
+    {
+      var a=document.body;
+      a.classList.toggle("dark");
+      }
+</script> 
+ 
+</body></html>
